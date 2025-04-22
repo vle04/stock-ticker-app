@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stock lookup form</title>
+  </head>
+  <body>
+    <h2>search for public company info</h2>
+    <form action="/process" method="GET">
+      <input
+        type="text"
+        name="query"
+        placeholder="enter company name or ticker"
+        required
+      />
+      <br />
+      <label>
+        <input type="radio" name="type" value="company" />
+        company name
+      </label>
+      <label>
+        <input type="radio" name="type" value="ticker" />
+        ticker symbol
+      </label>
+      <br />
+      <button type="submit">search</button>
+    </form>
+  </body>
+</html>
