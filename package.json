@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "mongodb": "^6.16.0"
+  },
+  "scripts": {
+    "start": "node server2.js"
   }
 }
